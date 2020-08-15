@@ -1,0 +1,96 @@
+<!--pages/teacherSubmit/teacherSubmit.wxml-->
+<view class="top">
+	<view>填写提示：</view>
+	<view class="top_info">
+		请按照要求填写以下内容
+	</view>
+</view>
+
+<view class="body">
+	<form bindsubmit="infoForm">
+		<view class="body_title">
+			<view>名称：</view>
+			<input type="text" placeholder="例：胡同学(老师)" maxlength="4" name="name"></input>
+		</view>
+		<view class="body_title">学校：
+			<input type="text" placeholder="例：华东交通大学" name="school"></input>
+		</view>
+		<view class="body_title">专业：
+			<input type="text" placeholder="例：软件工程" name="specialty"></input>
+		</view>
+
+		<view>性别：
+			<radio-group name="gender">
+				<label class="radio">
+					<radio value="1" checked="true" />男
+				</label>
+				<label class="radio">
+					<radio value="0" />女
+				</label>
+			</radio-group>
+		</view>
+
+		<view>所教科目：
+			<checkbox-group name="subject">
+				<label class="checkbox">
+					<checkbox value="chinese" checked="true" />语文
+				</label>
+				<label class="checkbox">
+					<checkbox value="math" checked="true" />数学
+				</label>
+				<label class="checkbox">
+					<checkbox value="english" />英语
+				</label>
+				<label class="checkbox">
+					<checkbox value="physics" />物理
+				</label>
+				<label class="checkbox">
+					<checkbox value="chemistry" />化学
+				</label>
+				<label class="checkbox">
+					<checkbox value="biology" />生物
+				</label>
+				<label class="checkbox">
+					<checkbox value="politics" />政治
+				</label>
+				<label class="checkbox">
+					<checkbox value="history" />历史
+				</label>
+				<label class="checkbox">
+					<checkbox value="geography" />地理
+				</label>
+				<label class="checkbox">
+					<checkbox value="speciality" />特长
+				</label>
+			</checkbox-group>
+		</view>
+		<view>所教年级：
+			<checkbox-group name="grade">
+				<label class="checkbox">
+					<checkbox value="chinese" checked="true" />小学
+				</label>
+				<label class="checkbox">
+					<checkbox value="math" checked="true" />初中
+				</label>
+				<label class="checkbox">
+					<checkbox value="english" />高中
+				</label>
+			</checkbox-group>
+		</view>
+
+		<view class="body_title">联系方式：
+			<input type="text" placeholder="例：12345678900" name="contact"></input>
+		</view>
+		<view class="body_title">个人简介：
+			<input type="text" placeholder="20个字以内" name="introduction"></input>
+		</view>
+		<button form-type="submit" type="primary">提交</button>
+	</form>
+</view>
+
+<view class="footer">
+
+</view>
+<view>
+
+</view>

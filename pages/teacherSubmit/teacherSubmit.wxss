@@ -1,0 +1,17 @@
+page{
+  background-color: whitesmoke;
+}
+.top{
+
+}
+.body{
+
+}
+.body_title{
+  display: flex;
+  flex-direction: row;
+  border: solid 1px white;
+}
+.footer{
+
+}

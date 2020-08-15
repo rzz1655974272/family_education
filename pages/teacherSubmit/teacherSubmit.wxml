@@ -1,0 +1,100 @@
+<!--pages/teacherSubmit/teacherSubmit.wxml-->
+<view class="top">
+	<view>填写提示：</view>
+	<view class="top_info">
+		请按照要求填写以下内容
+	</view>
+</view>
+
+<view class="body">
+	<form bindsubmit="infoForm">
+		<view class="body_title">
+			<view>关键字：</view>
+			<input type="text" placeholder="8个字以内" maxlength="8" name="title"></input>
+		</view>
+
+		<view>科目：
+			<checkbox-group name="subject">
+				<label class="checkbox">
+					<checkbox value="chinese" checked="true" />语文
+				</label>
+				<label class="checkbox">
+					<checkbox value="math" checked="true" />数学
+				</label>
+				<label class="checkbox">
+					<checkbox value="english" />英语
+				</label>
+				<label class="checkbox">
+					<checkbox value="physics" />物理
+				</label>
+				<label class="checkbox">
+					<checkbox value="chemistry" />化学
+				</label>
+				<label class="checkbox">
+					<checkbox value="biology" />生物
+				</label>
+				<label class="checkbox">
+					<checkbox value="politics" />政治
+				</label>
+				<label class="checkbox">
+					<checkbox value="history" />历史
+				</label>
+				<label class="checkbox">
+					<checkbox value="geography" />地理
+				</label>
+				<label class="checkbox">
+					<checkbox value="speciality" />特长
+				</label>
+			</checkbox-group>
+		</view>
+		<view>年级：
+			<radio-group name="grade">
+				<label class="radio">
+					<radio value="primarySchool" checked="true" />小学
+				</label>
+				<label class="radio">
+					<radio value="middleSchool" />初中
+				</label>
+				<label class="radio">
+					<radio value="highSchool" />高中
+				</label>
+			</radio-group>
+		</view>
+
+		<view>性别：
+			<radio-group name="gender">
+				<label class="radio">
+					<radio value="1" checked="true" />男
+				</label>
+				<label class="radio">
+					<radio value="0" />女
+				</label>
+			</radio-group>
+		</view>
+
+		<view>
+			<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" name="address">
+				<view class="picker">
+					所在县区：{{array[index]}}
+				</view>
+			</picker>
+		</view>
+		<view class="body_title">详细地址：
+			<input type="text" placeholder="详细到小区即可" name="detailAddress"></input>
+		</view>
+		<view class="body_title">联系方式：
+			<input type="text" placeholder="例：12345678900" name="contact"></input>
+		</view>
+		<view class="body_title">其他要求：
+			<input type="text" name="otherReq"></input>
+		</view>
+		<button form-type="submit" type="primary">提交</button>
+	</form>
+</view>
+
+<view class="footer">
+
+</view>
+<view>
+
+</view>

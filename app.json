@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/teacherSubmit/teacherSubmit",
+    "pages/studentSubmit/studentSubmit",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/teacherSubmit/teacherSubmit",
+        "iconPath": "./icons/index.png",
+        "selectedIconPath": "./icons/index01.png",
+        "text": "首页"
+      },
+      {
+        "pagePath":  "pages/studentSubmit/studentSubmit",
+        "iconPath": "./icons/ui.png",
+        "selectedIconPath": "./icons/ui01.png",
+        "text": "界面"
+      },
+      {
+        "pagePath": "pages/teacherSubmit/teacherSubmit",
+        "iconPath": "./icons/extend.png",
+        "selectedIconPath": "./icons/extend01.png",
+        "text": "扩展"
+      },
+      {
+        "pagePath": "pages/teacherSubmit/teacherSubmit",
+        "iconPath": "./icons/my.png",
+        "selectedIconPath": "./icons/my01.png",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
